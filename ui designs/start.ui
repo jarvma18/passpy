@@ -90,8 +90,32 @@
      <height>22</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionCreate_new_storage"/>
+    <addaction name="actionOpen_existing_storage"/>
+    <addaction name="actionClose"/>
+   </widget>
+   <addaction name="menuFile"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCreate_new_storage">
+   <property name="text">
+    <string>Create new storage</string>
+   </property>
+  </action>
+  <action name="actionOpen_existing_storage">
+   <property name="text">
+    <string>Open existing storage</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
