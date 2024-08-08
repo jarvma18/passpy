@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>822</width>
+    <width>818</width>
     <height>595</height>
    </rect>
   </property>
@@ -249,7 +249,7 @@
        <widget class="QPushButton" name="pushButton_5">
         <property name="geometry">
          <rect>
-          <x>400</x>
+          <x>410</x>
           <y>360</y>
           <width>381</width>
           <height>168</height>
@@ -275,6 +275,127 @@
         </property>
        </widget>
       </widget>
+      <widget class="QWidget" name="page_3">
+       <widget class="QListWidget" name="listWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>256</width>
+          <height>511</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>User1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>User2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>User3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>User4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>User5</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>10</y>
+          <width>521</width>
+          <height>168</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>FreeSans</family>
+          <pointsize>26</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Copy username</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_7">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>180</y>
+          <width>521</width>
+          <height>168</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>FreeSans</family>
+          <pointsize>26</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Copy password</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_8">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>350</y>
+          <width>521</width>
+          <height>168</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>FreeSans</family>
+          <pointsize>26</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Copy information</string>
+        </property>
+       </widget>
+      </widget>
      </widget>
     </item>
    </layout>
@@ -284,7 +405,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>822</width>
+     <width>818</width>
      <height>22</height>
     </rect>
    </property>
