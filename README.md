@@ -13,6 +13,9 @@ Passpy is a lightweight password manager designed to securely store and manage y
 ## How to run in development
 
 ```
+# install pycrypto
+pip install pycrypto
+
 # tests
 python3 -m unittesst
 ```
