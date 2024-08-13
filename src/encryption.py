@@ -1,3 +1,9 @@
+import base64
+import hashlib
+from Crypto.Cipher import AES
+from Crypto import Random
+import os
+
 def pad_for_aes256(plaintext: str) -> str:
   block_size = 16
   remainder = len(plaintext) % block_size
