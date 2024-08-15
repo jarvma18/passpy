@@ -2,28 +2,30 @@ import unittest
 
 from src.encryption import pad_for_aes256
 from src.encryption import unpad_for_aes256
+from src.encryption import encrypt_aes256
+from src.encryption import decrypt_aes256
 
 class TestClass(unittest.TestCase):
-  def should_pad_text_for_aes256(self):
+  def test_should_pad_text_for_aes256(self):
     plaintext: str = 'test'
     expected_value: str = 'test            '
     padded_text: str = pad_for_aes256(plaintext)
     self.assertEqual(expected_value, padded_text)
 
-  def should_unpad_text(self):
+  def test_should_unpad_text(self):
     padded_text: str = 'test            '
     expected_value: str = 'test'
     plaintext: str = unpad_for_aes256(padded_text)
     self.assertEqual(expected_value, plaintext)
 
-  def should_encrypt_text_to_aes256(self):
+  def test_should_encrypt_text_to_aes256(self):
     text_to_encrypt: str = 'test'
     key: str = 'test'
     encrypted_text: str = encrypt_aes256(text_to_encrypt, key)
     self.assertNotEqual(text_to_encrypt, encrypted_text)
     self.assertEqual(text_to_encrypt, 'x');
 
-  def should_decrypt_text_to_aes256(self):
+  def test_should_decrypt_text_to_aes256(self):
     encrypted_text: str = 'x'
     key: str = 'test'
     decrypted_text: str = decrypt_aes256(encrypted_text, key)
