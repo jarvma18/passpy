@@ -13,8 +13,8 @@ Passpy is a lightweight password manager designed to securely store and manage y
 ## How to run in development
 
 ```
-# install pycrypto
-pip install pycrypto
+# install PyCryptodome
+pip3 install -U PyCryptodome
 
 # tests
 python3 -m unittesst
