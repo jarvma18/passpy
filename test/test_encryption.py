@@ -18,14 +18,14 @@ class TestClass(unittest.TestCase):
   def test_should_encrypt_text_to_aes256(self):
     text_to_encrypt: str = 'test'
     aes_256_cipher: str = AES256Cipher('test')
-    encrypted_text: str = AES256Cipher.encrypt(aes_256_cipher, text_to_encrypt)
+    encrypted_text: str = aes_256_cipher.encrypt(text_to_encrypt)
     self.assertNotEqual(text_to_encrypt, encrypted_text)
 
   def test_should_decrypt_text_to_aes256(self):
     text_to_encrypt: str = 'test'
     aes_256_cipher: str = AES256Cipher('test')
-    encrypted_text: str = AES256Cipher.encrypt(aes_256_cipher, text_to_encrypt)
-    decrypted_text: str = AES256Cipher.decrypt(aes_256_cipher, encrypted_text)
+    encrypted_text: str = aes_256_cipher.encrypt(text_to_encrypt)
+    decrypted_text: str = aes_256_cipher.decrypt(encrypted_text)
     self.assertNotEqual(encrypted_text, decrypted_text)
 
 if __name__ == '__main__':
