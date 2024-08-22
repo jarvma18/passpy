@@ -10,6 +10,19 @@ Passpy is a lightweight password manager designed to securely store and manage y
 - Auto-fill passwords in web browsers
 - Backup and restore password database
 
+## About storage
+
+- Encrypted JSON file
+- Structure:
+  ```
+    "uuid": {
+      "username": "x",
+      "password": "y"
+    },
+    "uuid": {},
+    ...
+  ```
+
 ## How to run in development
 
 ```
