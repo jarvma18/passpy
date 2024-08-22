@@ -1,11 +1,10 @@
 import unittest
-import os
 
 from src.storage import Storage
 from test.shared import delete_file
 
 class TestClass(unittest.TestCase):
-  test_file: str = 'test/test_file_encrypted.json'
+  test_file: str = 'test/test_storage_encrypted.json'
   test_file_content: str = '{"test": "test"}'
   storage: Storage = Storage(test_file, 'test')
 
